@@ -1,0 +1,227 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/find/find",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"backgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"color": "#ef5952",
+						"style": "circle",
+						"offset": "120"
+					}
+				}
+			}
+		}, {
+			"path": "pages/bookshelf/bookshelf",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"backgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"pullToRefresh": {
+						"color": "#ef5952",
+						"style": "circle",
+						"offset": "50"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/lib/lib",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"disableScroll": true,
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/reg/reg",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/find/find",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/setPass/setPass",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/readRecord/readRecord",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/info/info",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/find/more/more",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false,
+				"app-plus": {
+				    "softinputNavBar": "none"
+				}
+			}
+
+		},{
+            "path" : "pages/detail/author/author",
+            "style" :                                                                                    
+            {
+               "navigationStyle": "custom", // 隐藏系统导航栏
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/comment/comment",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"softinputNavBar": "none",
+					"pullToRefresh": {
+						"color": "#ef5952",
+						"style": "circle",
+						"offset": "50"
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/comment/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom", // 隐藏系统导航栏
+                "enablePullDownRefresh": false,
+				"app-plus": {
+				    "softinputNavBar": "none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom", // 隐藏系统导航栏
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/read/read",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom", // 隐藏系统导航栏
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/read/chapter/chapter",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom", // 隐藏系统导航栏
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"app-plus": {
+			"scrollIndicator": "none",
+			"bounce": "none"
+		}
+	},
+	"tabBar": {
+		"color": "#888888",
+		"selectedColor": "#fc4c7b",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/bookshelf/bookshelf",
+				"iconPath": "/static/tabbar/bookshelf.png",
+				"selectedIconPath": "/static/tabbar/bookshelf_s.png",
+				"text": "书架"
+			},
+			{
+				"pagePath": "pages/find/find",
+				"iconPath": "/static/tabbar/find.png",
+				"selectedIconPath": "/static/tabbar/find_s.png",
+				"text": "发现"
+			},
+			{
+				"pagePath": "pages/lib/lib",
+				"iconPath": "/static/tabbar/lib.png",
+				"selectedIconPath": "/static/tabbar/lib_s.png",
+				"text": "书库"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "/static/tabbar/my.png",
+				"selectedIconPath": "/static/tabbar/my_s.png",
+				"text": "我的"
+			}
+		]
+	}
+}
